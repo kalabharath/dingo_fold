@@ -1,0 +1,9 @@
+*.txt
+*.pdb
+*.stride
+*.pth
+*.log
+*.fa
+*.pdb.tgz
+*.lib.gz 
+*.csv

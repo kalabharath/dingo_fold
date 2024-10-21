@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>Index of /cath/releases/latest-release/sequence-data</title>
+  <link rel="stylesheet" href="/theme/style.css" type="text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1" /> </head>
+ <body>
+<div class="wrapper">
+<!-- we open the `wrapper` element here, but close it in the `footer.html` file -->
+<table><tr><th><img src="/theme/icons/blank.png" alt="[ICO]" /></th><th><a href="?C=N;O=A">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th></tr><tr><td valign="top"><a href="/cath/releases/latest-release/"><img src="/theme/icons/folder-home.png" alt="[DIR]" /></a></td><td><a href="/cath/releases/latest-release/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td></tr>
+<tr><td valign="top"><a href="sequence-by-superfamily/"><img src="/theme/icons/folder.png" alt="[DIR]" /></a></td><td><a href="sequence-by-superfamily/">sequence-by-superfamily/</a></td><td align="right">23-Aug-2023 16:54  </td><td align="right">  - </td></tr>
+<tr><td valign="top"><a href="funfam-hmm3.lib.gz"><img src="/theme/icons/archive.png" alt="[   ]" /></a></td><td><a href="funfam-hmm3.lib.gz">funfam-hmm3.lib.gz</a></td><td align="right">03-Nov-2020 00:00  </td><td align="right">1.3G</td></tr>
+<tr><td valign="top"><a href="cath-domain-seqs.fa"><img src="/theme/icons/default.png" alt="[   ]" /></a></td><td><a href="cath-domain-seqs.fa">cath-domain-seqs.fa</a></td><td align="right">11-Sep-2019 12:49  </td><td align="right"> 93M</td></tr>
+<tr><td valign="top"><a href="cath-domain-seqs-S100.fa"><img src="/theme/icons/default.png" alt="[   ]" /></a></td><td><a href="cath-domain-seqs-S100.fa">cath-domain-seqs-S100.fa</a></td><td align="right">11-Sep-2019 12:49  </td><td align="right"> 24M</td></tr>
+<tr><td valign="top"><a href="cath-domain-seqs-S95.fa"><img src="/theme/icons/default.png" alt="[   ]" /></a></td><td><a href="cath-domain-seqs-S95.fa">cath-domain-seqs-S95.fa</a></td><td align="right">11-Sep-2019 12:49  </td><td align="right"> 11M</td></tr>
+<tr><td valign="top"><a href="cath-domain-seqs-S60.fa"><img src="/theme/icons/default.png" alt="[   ]" /></a></td><td><a href="cath-domain-seqs-S60.fa">cath-domain-seqs-S60.fa</a></td><td align="right">11-Sep-2019 12:49  </td><td align="right">8.2M</td></tr>
+<tr><td valign="top"><a href="cath-domain-seqs-S35.fa"><img src="/theme/icons/default.png" alt="[   ]" /></a></td><td><a href="cath-domain-seqs-S35.fa">cath-domain-seqs-S35.fa</a></td><td align="right">11-Sep-2019 12:49  </td><td align="right">5.6M</td></tr>
+</table>
+	<div class="block">
+	</div><!--/.postlisting-->
+
+</div><!--/.wrapper-->
+
+<div class="footer">
+	<!-- Apaxy theme by <a href="https://twitter.com/adamwhitcroft">@adamwhitcroft</a> -->
+</div><!--/.footer-->
+<script type="text/javascript">
+// grab the 2nd child and add the parent class. tr:nth-child(2)
+document.getElementsByTagName('tr')[1].className = 'parent';
+</script>
+</body></html>

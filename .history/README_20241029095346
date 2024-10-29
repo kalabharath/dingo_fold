@@ -1,8 +1,6 @@
-
 # Dingo Fold
 
-Dingo Fold (3D assembly of Individual Smotifs to Near-native Geometry as Orchestrated by Fold based algorithms) is a project aimed at inferring near-native 3D structure of the proteins. This repository contains the necessary files and instructions to get started with Dingo Fold.
-# Incomplete (Work in Progress)
+Dingo Fold (3D assembly of Individual smotifs usin) is a project aimed at inferring entire 3D structure of the protein from sequence using Smotifs. This repository contains the necessary files and instructions to get started with Dingo Fold.
 
 ## Table of Contents
 - [Installation](#installation)

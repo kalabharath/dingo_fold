@@ -39,13 +39,11 @@ def process_csv(input_file, output_file, pdb_folder):
             domain = row['domain']
             print (f"Processing {domain}")
             pdb_file = os.path.join(pdb_folder, f"{domain[:7]}.pdb")
-            
             sse1_atoms = read_pdb(pdb_file, domain[4], int(row['SSE1_start']), int(row['SSE1_end']))
             sse2_atoms = read_pdb(pdb_file, domain[4], int(row['SSE2_start']), int(row['SSE2_end']))
-            
             total_contacts = count_contacts(sse1_atoms, sse2_atoms)
             row['total_contacts'] = total_contacts
-            
+
             writer.writerow(row)
 
 # Usage

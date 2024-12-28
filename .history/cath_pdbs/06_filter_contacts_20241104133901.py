@@ -26,7 +26,7 @@ def main(csv_file):
     print (f"Lost entries after loop length: {total_entries - len(df)}")
     # delete all rows where total_contacts is zero 'and' loop_length is is greater than 10 
     total_entries = len(df)
-    df = df.drop(df[(df['total_contacts'] < 5) & (df['loop_length'] > 8)].index)    
+    df = df.drop(df[(df['total_contacts'] < 5) & (df['loop_length'] > 12)].index)    
     print (f"Lost entries after total_contacts and loop_length: {total_entries - len(df)}")
     
     
@@ -36,7 +36,7 @@ def main(csv_file):
     print(f"Filtered data saved to {output_file}") 
     
     # add a new column called full_sequence and concatenate sse1_seq, sse2_seq
-    df['full_sequence'] = df['sse1_seq'] +'-xxx-'+df['sse2_seq']
+    df['full_sequence'] = df['sse1_seq'] + df['sse2_seq']
     
     
     # create a new_directory called group_smotifs

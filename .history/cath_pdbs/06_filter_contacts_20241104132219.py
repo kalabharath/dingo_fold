@@ -9,11 +9,8 @@ def main(csv_file):
     # print total number of entries
     print(f"Total number of entries: {len(df)}")
     total_entries = len(df) 
+    # delete all rows where where sse1_length or sse2_length is less than 4
     
-    # in the first column reformat entries an delete  EH_4_12_9_10	the last two underscore separated numbers
-    df['smotif_id2'] = df['smotif_id'].apply(lambda x: x.rsplit('_', 2)[0])
-    
-    # delete all rows where where sse1_length or sse2_length is less than 4    
     df = df[df['sse1_length'] >= 4]
     # print lost entries
     print(f"Lost entries after sse1 length: {total_entries - len(df)}")
@@ -26,7 +23,7 @@ def main(csv_file):
     print (f"Lost entries after loop length: {total_entries - len(df)}")
     # delete all rows where total_contacts is zero 'and' loop_length is is greater than 10 
     total_entries = len(df)
-    df = df.drop(df[(df['total_contacts'] < 5) & (df['loop_length'] > 8)].index)    
+    df = df.drop(df[(df['total_contacts'] < 5) & (df['loop_length'] > 12)].index)    
     print (f"Lost entries after total_contacts and loop_length: {total_entries - len(df)}")
     
     
@@ -36,19 +33,8 @@ def main(csv_file):
     print(f"Filtered data saved to {output_file}") 
     
     # add a new column called full_sequence and concatenate sse1_seq, sse2_seq
-    df['full_sequence'] = df['sse1_seq'] +'-xxx-'+df['sse2_seq']
+    df['full_sequence'] = df['sse1_seq'] + df['sse2_seq']
     
-    
-    # create a new_directory called group_smotifs
-    if not os.path.exists("group_smotifs"):
-        os.makedirs("group_smotifs")
-    
-    # split the df by smotif_id2 and save each group to a new csv file
-    for name, group in df.groupby('smotif_id2'):
-        group_file = os.path.join("group_smotifs", name + ".csv")
-        group.to_csv(group_file, index=False)
-    
-       
     # copy the redundant full_sequences to a new dataframe
     redundant_df = df[df.duplicated(subset='full_sequence', keep=False)]
     print(f"Number of redundant full_sequences: {len(redundant_df)}")

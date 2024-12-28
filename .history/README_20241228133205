@@ -3,7 +3,6 @@
 
 Dingo Fold (3D assembly of Individual Smotifs to Near-native Geometry as Orchestrated by Fold based algorithms) is a project aimed at inferring near-native 3D structure of the proteins. This repository contains the necessary files and instructions to get started with Dingo Fold.
 # Incomplete (Work in Progress)
-
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
@@ -45,4 +44,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-For any questions or issues, please open an issue on GitHub or contact [your email].
+For any questions or issues, please open an issue on GitHub or contact [kalabharath@gmail.com].

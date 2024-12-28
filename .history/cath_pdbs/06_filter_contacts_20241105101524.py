@@ -36,7 +36,7 @@ def main(csv_file):
     print(f"Filtered data saved to {output_file}") 
     
     # add a new column called full_sequence and concatenate sse1_seq, sse2_seq
-    df['full_sequence'] = df['sse1_seq'] +'-xxx-'+df['sse2_seq']
+    df['full_sequence'] = df['sse1_seq'] +'XXX'+df['sse2_seq']
     
     
     # create a new_directory called group_smotifs
